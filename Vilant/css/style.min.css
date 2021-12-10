@@ -412,6 +412,10 @@ section {
   border-radius: 50%;
   display: inline-block !important; }
 
+.img-menu {
+width: 40% !important;
+display: inline-block !important;}
+
 .testi-details {
   text-align: left; }
 
