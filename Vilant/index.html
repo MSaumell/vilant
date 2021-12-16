@@ -8,6 +8,7 @@
     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <title>Vilant</title>
     <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,13 +30,14 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries (Millor no tocar)-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="js/validador.js"></script>
 
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
 <!-- Barra de navegació -->
 	<nav id="header-navbar" class="navbar navbar-expand-lg py-4"> 
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center text-white" href="/">
+        <a class="navbar-brand d-flex align-items-center text-white" href="index.html">
             <h3 class="font-weight-bolder mb-0">VILANT</h3>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,7 +138,6 @@
                 <h2 class="section-title">
                     A template built by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>
                 </h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
             </div>
             <!-- End of Section Title -->
             <div class="row">
@@ -146,55 +147,37 @@
                         <!-- Features Item -->
                         <div class="col-md-4 col-sm-12 text-center mt-4">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-cog fs-40"></i>
+                                <div class="my-4"> <!-- Aqui va la foto -->
+                                    <img src="img/cuina.png" alt="cuina"> 
                                 </div>
-                                <h4>Easy to Customize</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>La nostre cuina</h4>
+                                <p>La cuina és el lloc on es compleixen els teus desitjos de menjar.<br><br></p>
                             </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-frame-contract fs-40"></i>
-                                </div>
-                                <h4>Pixel Perfect</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
+                         
                         </div>
                         <!-- End of Feature Item -->
                         <!-- Features Item -->
                         <div class="col-md-4 col-sm-12 text-center">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-bubble fs-40"></i>
+                                <div class="my-4"> <!-- Aqui va la foto -->
+                                    <img src="img/taules.png" alt="taules">
                                 </div>
-                                <h4>Full Support</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>L'interior del restaruant</h4>
+                                <p>El millor del restaurant és l'interior, ja que conté diversos menjadors amb arquitectura rural.</p>
                             </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-magic-wand fs-40"></i>
-                                </div>
-                                <h4>Clean Design</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
+                           
                         </div>
                         <!-- End of Feature Item -->
                         <!-- Features Item -->
                         <div class="col-md-4 col-sm-12 text-center mt-4">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-clock fs-40"></i>
+                                <div class="my-4"> <!-- Aqui va la foto -->
+                                    <img src="img/vistes.png" alt="vistes">
                                 </div>
-                                <h4>Ontime Project</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Vistes exteriors</h4>
+                                <p>Les vistes de la terrassa són impressionants, en cap altre lloc les podran veure.</p>
                             </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-thumbs-up fs-40"></i>
-                                </div>
-                                <h4>Built with SASS</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
+                           
                         </div>
                         <!-- End of Feature Item -->
                     </div>
@@ -421,13 +404,13 @@
                         <!-- Portfolio Item -->
                         <div class="grid-item" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/espagueti.png" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/pasta.jpg" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/espagueti.png" title="Espagueti">
+                                        <a class="img-pop" data-rel="lightcase" href="img/pasta.jpg" title="Espagueti">
                                             <span class="lnr lnr-move"></span>
                                         </a>
-                                        <a class="ext-link" href="img/espagueti.png" target="_blank">
+                                        <a class="ext-link" href="img/pasta.jpg" target="_blank">
                                             <span class="lnr lnr-link"></span>
                                         </a>
                                     </div>
@@ -475,32 +458,26 @@
         <div class="section-content" data-aos="fade-up">
             <div class="row ">
                 <div class="col-md-12">
-                    <!-- Section Title -->
-                    <div class="title-wrap mb-5">
-                        <h2>Who love to <span> work</span> with us</h2>
-                    </div>
-                    <!-- End of Section Title -->
-                </div>
                 <!-- Client Holder -->
                 <div class="col-md-12 client-holder">
                     <div class="client-slider owl-carousel">
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/logo-vilant-blanc.png" alt="logo-vilant-blanc">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/logo-vilant-blanc.png" alt="logo-vilant-blanc">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/logo-vilant-blanc.png" alt="logo-vilant-blanc">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/logo-vilant-blanc.png" alt="logo-vilant-blanc">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/logo-vilant-blanc.png" alt="logo-vilant-blanc">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/logo-vilant-blanc.png" alt="logo-vilant-blanc">
                         </div>
                     </div>
                     <!-- End of Client Holder -->
@@ -517,19 +494,19 @@
                 <div class="bg-white p-5 shadow">
                     <div class="heading-section text-center">
                         <h2 class="mb-4">
-                            Contacta'ns
+                            Formulari de contacte
                         </h2>
                     </div>
-                    <form method="post" name="contact-us" action="">
+                    <form method="post" name="contact-us" action="single.html" onsubmit="return validarForm()">
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Nom">
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Correu electrònic">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Correu electrònic" required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Telèfon">
+                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Telèfon (opcional)">
                             </div>
                             <div class="col-md-12 form-group">
                                 <textarea class="form-control" id="message" name="message" rows="6" placeholder="El vostre missatge ..."></textarea>
@@ -543,34 +520,19 @@
             </div>
             <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
                 <h2 class="mb-4">
-                    Best solution to create any website. Pay once.
+                    Contacta'ns
                 </h2>
-                <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-
-                <ul class="list-inline py-2">
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-rocket"></span>
-                        <p>Fast delivery</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-magic-wand"></span>
-                        <p>Awesome design</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-cog"></span>
-                        <p>Easy to customize</p>
-                    </li>
-                </ul>
+                <p class="mb-4">Si tens qualsevol dubte, posa't en contacte amb nosaltres. Et respondrem el més aviat possible.</p>
             </div>
         </div>
-        
+       
     </div>
 </section>
 <!-- End of Reservation Section -->	
 <!-- Features Section-->
 <section id="cta" class="bg-fixed overlay" style="background-image: url(img/fons.png);">
     <div class="container">
-        <div class="section-content" data-aos="fade-up">
+        <div class="section-content" data-aos="fade-down">
             <div class="row">
             </div>
         </div>
@@ -581,7 +543,9 @@
     <div class="inner container">
          <div class="row">
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		
+                 <a href="https://ca.dinahosting.com/" target="_blank"> <img src="img/dinahosting.png" alt="dinahosting"></a>
+                 <a href="https://creativecommons.org/" target="_blank"> <img src="img/creative.png" alt="creative" style="margin-left: 10px;"></a>
+                 <a href="https://wapps.cat/" target="_blank"> <img src="img/webs.png" alt="webs" style="margin-left: 10px;"></a>
          	</div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
          		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
@@ -625,5 +589,6 @@
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
 	<script src="//localhost:35729/livereload.js"></script>
+
 </body>
 </html>
